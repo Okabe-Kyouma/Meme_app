@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/meme_share"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_margin="8dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/meme_subreddit_name"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Subreddit"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:background="@drawable/subreddit_name"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/meme_user_name"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="230dp"
+            android:background="@drawable/subreddit_name"
+
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/meme_title"
+            android:layout_height="wrap_content"
+            android:text="Null"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginLeft="12dp"
+           android:textColor="@color/black"
+            android:layout_marginTop="58dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/meme_nsfw"
+            android:layout_height="wrap_content"
+            android:text="nsfw/tap_to_view"
+            android:textColor="@color/red"
+            android:visibility="invisible"
+            android:padding="8dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="140dp"
+            android:elevation="100dp"
+            android:textStyle="bold"
+            android:gravity="center"></TextView>
+
+        <ImageView
+            android:id="@+id/meme_image"
+            android:layout_width="358dp"
+            android:layout_height="409dp"
+            android:background="@drawable/image_background"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholderimage">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/meme_download_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:layout_marginLeft="190dp"
+            android:background="@drawable/meme_share"
+            android:layout_marginTop="560dp"
+            android:src="@drawable/download"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/meme_share_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/meme_share"
+            android:layout_marginLeft="140dp"
+            android:padding="8dp"
+            android:layout_marginTop="560dp"
+            android:src="@drawable/sharebutton"
+            ></ImageView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Next"
+            android:id="@+id/meme_button"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="620dp"
+            android:layout_marginLeft="138dp"
+            android:padding="8dp"
+            ></Button>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
